@@ -15,7 +15,6 @@ const userSchemaZod = {
   password: z
     .string()
     .min(8)
-    .regex(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/),
 };
 
 const userSchema = new Schema(
